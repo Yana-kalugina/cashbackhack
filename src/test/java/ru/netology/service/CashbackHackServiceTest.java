@@ -1,12 +1,12 @@
 package ru.netology.service;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.*;
 
 class CashbackHackServiceTest {
 
-    @Test
+    @org.testng.annotations.Test
     void remain1() {
         CashbackHackService service = new CashbackHackService();
         int expected = 100;
@@ -14,10 +14,10 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     void remain2() {
         CashbackHackService service = new CashbackHackService();
         int expected = 500;
@@ -25,10 +25,10 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     void remain3() {
         CashbackHackService service = new CashbackHackService();
         int expected = 900;
@@ -36,10 +36,10 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     void remain4() {
         CashbackHackService service = new CashbackHackService();
         int expected = 1;
@@ -47,10 +47,10 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     void remain5() {
         CashbackHackService service = new CashbackHackService();
         int expected = 999;
@@ -58,10 +58,10 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
-    @Test
+    @org.testng.annotations.Test
     void remain6() {
         CashbackHackService service = new CashbackHackService();
         int expected = 0;
@@ -69,6 +69,6 @@ class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 }
